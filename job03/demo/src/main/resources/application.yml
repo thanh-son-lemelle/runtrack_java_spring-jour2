@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: demo
+
+greeting:
+  message: Bonjour depuis YML !

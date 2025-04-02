@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Accueil</title>
+</head>
+<body>
+
+<h1 th:text="${message}">Bienvenue !</h1>
+
+<h2>Navigation</h2>
+
+<form th:action="@{/view}" method="get">
+  <button type="submit">Voir message (/view)</button>
+</form>
+
+<form th:action="@{/liste}" method="get">
+  <button type="submit">Voir la liste (/liste)</button>
+</form>
+
+<form th:action="@{/form}" method="get">
+  <button type="submit">Formulaire simple (/form)</button>
+</form>
+
+<form th:action="@{/formValidate}" method="get">
+  <button type="submit">Formulaire avec validation (/formValidate)</button>
+</form>
+
+</body>
+</html>
